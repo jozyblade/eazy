@@ -1,9 +1,6 @@
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: white;
-  height: 100px;
+  /* height: 100px; */
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -11,58 +8,71 @@ header {
 
 }
 
-.nav-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-
-}
-
-.nyelv{
-   margin-left: 45pt;}
-
-.logo {
-    display: flex;
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo h4 {
-    padding-top: 15px;
-    color: rgb(65, 64, 66);
-    letter-spacing: 4pt;
-  }
-
 nav {
   display: flex;
   /* position: relative; */
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  font-size: xx-large;
   justify-content: center;
   align-items: center;
 }
 
+.logo h4 {
+  padding-top: 10px;
+  color: rgb(65, 64, 66);
+  letter-spacing: 4pt;
+}
+
 .logo h4:hover {
-    color: rgb(228, 33, 85);
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  color: rgb(228, 33, 85);
+}
 
-  .nav-area li{
-    padding-left: 2rem;
-    font-size: large;
-    text-transform: uppercase;
-    display: inline-block;
+a {
+  text-decoration: none;
+}
 
+.nav-area, .nyelv-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  }
+.nyelv-area a{
+  margin-left: 5px;
+}
 
-  .nav-area li a {
-    color: rgb(65, 64, 66);
-  }
+.nav-area li {
+  font-size: large;
+  text-transform: uppercase;
+  background-color:inherit;
+  /* display: inline-block; */
+}
 
-  .nav-area li a:hover {
-    color: rgb(228, 33, 85);
-  }
+.nav-area li a {
+  color: rgb(65, 64, 66);
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.nav-area li a:hover {
+  color: white;
+  border: 1px solid black;
+  opacity: 70%;
+  /* background-color: rgb(228, 33, 85); */
+  background-image: linear-gradient(
+    to right,
+    rgb(228, 33, 85),
+    rgb(254, 190, 16)
+  );
+}

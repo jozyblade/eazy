@@ -19,7 +19,7 @@
 footer {
   display: flex;
   width: auto;
-
+  font-weight: bold;
   /* margin: 100px; */
   text-transform: capitalize;
   /* text-align: left; */
@@ -29,7 +29,7 @@ footer {
   color: white;
 }
 
-a,  {
+a {
   text-decoration: none;
 }
 

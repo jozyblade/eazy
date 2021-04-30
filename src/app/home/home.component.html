@@ -1,2 +1,128 @@
-<p>home works!</p>
-<img src="assets/pexels-artūras-kokorevas-2401778.jpg" alt="" height="600" width="400">
+<section class="section1">
+  <img src="assets/appscreen.png" alt="" width="200" height="400" />
+  <div class="letoltes">
+    <h1>letöltés</h1>
+    <a href="https://www.apple.com/app-store/" target="_blank"> AppStore</a>-ból, vagy a
+    <a href="https://play.google.com/store/apps" target="blank"> Google Play</a>
+  </div>
+  <article>
+    <h1>
+      NE BÍZD A VÉLETLENRE, AZ EAZY-VEL MINDEN EGYSZERŰBB! UNOD A SORBAN ÁLLÁST?
+      RENDELJ KÖZÖSEN BARÁTAIDDAL SZÁMOS PARTNERÜK KÍNÁLATÁBÓL! KEDVENC
+      SZÓRAKOZÓHELYEDRE/RENDEZVÉNYEDRE KÖNNYEDÉN MEGVÁSÁROLHATOD BELÉPŐJEGYEDET!
+      HA NEM CSAK A SORBAN ÁLLÁST AKAROD ELKERÜLNI, ASZTALT IS FOGLALHATSZ!
+    </h1>
+  </article>
+</section>
+<section class="section2">
+  <video src="assets/eazyfirstview.mp4" controls></video>
+
+  <h2>
+    Az EAZY a legújabb <em> Androidra</em> és <em>iOs</em>-re letölthető
+    rendelési applikáció, mely több típusú vendéglátó egységben biztosít
+    megoldást a gyors, biztonságos, készpénzmentes fizetésre, asztalfoglalásra
+    és jegyvásárlásra. Egy olyan szolgáltatást nyújtunk partnereink és a
+    fogyasztók számára, melynek célja a biztonságosabb, élvezetesebb, és
+    egyszerűbb vásárlás! Az EAZY segítségével a felhasználók kényelmesen és
+    biztonságosan rendelhetnek és fizethetnek készpénz nélkül, amennyiben a
+    sorbanállás, és a gyakori, kisebb összegű fizetésből fennálló
+    készpénzhasználat meghosszabbítja a vásárlás menetét, nehezíti a kiszolgálás
+    körülményeit, és a költések átláthatóságát.
+  </h2>
+</section>
+<section class="section3">
+  <h1>Hogyan működik?</h1>
+  <img src="assets/1.png" alt="" />
+  <ul>
+    <li>
+      Töltsd le az EAZY-t az
+      <a href="https://www.apple.com/app-store/" target="_blank"> AppStore</a>-ból, vagy a
+      <a href="https://play.google.com/store/apps" target="blank">
+        Google Play</a>-ből!
+    </li>
+    <li>Keresd fel bármely, a promócióban részt vevő partnerünk üzletét!</li>
+    <li>
+      Nyisd meg a hely profilját, ha érdemes, foglalj asztalt, ha szükséges,
+      vásárolj belépőt!
+    </li>
+    <li>
+      Válassz kedvedre a kínálatából, hozz létre akár közös rendelést a
+      barátaiddal!
+    </li>
+    <li>
+      Fizess készpénzmentesen az applikáción keresztül, gyorsan és
+      biztonságosan!
+    </li>
+    <li>
+      Várd meg a rendelésed elkészültét jelző visszaigazolást, majd vedd át a
+      kapott NFC vagy a QR-kód segítségével az átvételi ponton, vagy
+      asztalszervíz esetén vedd át a felszolgálótól!
+    </li>
+    <li>
+      Ha elégedett vagy, hagyj borravalót egy mozdulattal, melyet akár előre is
+      megtehetsz!
+    </li>
+    <li>Élvezd a korlátok nélküli szórakozást!</li>
+  </ul>
+</section>
+<section class="section4">
+  <h1>Mit biztosítunk a felhasználók számára?</h1>
+  <img src="assets/2.png" alt="">
+  <ul class="list2">
+    <li>Felhasználóbarát felület</li>
+    <li>Sorbanállás elkerülése</li>
+    <li>Biztonságos, átlátható, készpénzmentes fizetés, mobil applikációról</li>
+    <li>Közös rendelés személyenkénti fizetési megoldással</li>
+    <li>Belépőjegy vásárlás</li>
+    <li>Asztalfoglalás</li>
+    <li>Előrendelés</li>
+  </ul>
+</section>
+<section class="section5"></section>
+<section class="section6"></section>
+<section class="section7"></section>
+<section class="section8"></section>
+<section class="section9">
+  <form id="contactForm">
+
+    <div class="row1">
+      <h2>Kapcsolat</h2><br>
+      <p>Kérdés esetén írj nekünk és igyekszünk minél előbb válaszolni</p>
+    </div>
+<div>
+      <div class="row2">
+          <input type="text" required="" placeholder="Név" name="name" id="cnt_name" class="form-control">
+
+          <input type="email" required="" placeholder="Email" name="email" id="cnt_email" class="form-control">
+      </div>
+
+      <div class="tel">
+        <input type="tel" required="" placeholder="Telefonszám" name="phone" id="cnt_phone" class="form-control">
+      </div>
+
+      <div class="selectmenu">
+        <select class="form-control" required="" name="subject" id="cnt_subject">
+          <option value="" disabled="" selected="" hidden="">Tárgy</option>
+          <option value="Ajánlatkérés">Ajánlatkérés</option>
+          <option value="Általános információk">Általános információk</option>
+          <option value="Visszaváltásra vonatkozó információk">Visszaváltásra vonatkozó információk</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <textarea name="message" id="cnt_message" class="form-control" placeholder="Üzenet" required=""
+          rows="5"></textarea>
+      </div>
+
+      <div *ngIf="false" id="messageOutcomeSuccess" class="success hide">Sikeres üzenetküldés!</div>
+      <div  *ngIf="false" id="messageOutcomeError" class="error hide">Sikertelen üzenetküldés!</div>
+
+      <div class="submit">
+        <button type="submit" class="btn-submit">Üzenet küldése</button>
+      </div>
+
+
+    </div>
+   
+  </form>
+</section>
